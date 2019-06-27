@@ -1,9 +1,20 @@
 body{
     text-align: center;
-    background-color: black;
     color: bisque;
 }
-.card{
-    color: black;
+.container{
+    background-color: #14142e;
+    background-size: 100%;
+}
+.container h1{
+    padding-top: 10%;
+}
+
+.container img{
+    margin-top: 15%;
+    width: 100%;
+}
+.container a{
+    margin: 10%;
 }
 
