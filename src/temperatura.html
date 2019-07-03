@@ -1,14 +1,65 @@
-<ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Temperatura C°
-            <span class="badge badge-primary badge-pill" id="temperatura"></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Estado
-            <span class="badge badge-primary badge-pill" id="estado"></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Conexion
-            <span class="badge badge-primary badge-pill" id="conexion"></span>
-        </li>
-</ul>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Temperatura</title>
+</head>
+
+<body style="background-color: #14142e">
+    <div class="card  " style="background-color: #14142e" >
+        <div class="card-header align-self-start" style="background-color: #14142e">
+            <a href="../index.html" class="btn btn-info " role="button"><samp class="fas fa-angle-left"></samp></a>
+        </div>
+        <div class="card mx-auto " style="width: 18rem;background-color: #14142e">
+            <h3 class="card-title text-white font-weight-bold text-center">Control de Temperatura</h3>
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Etiqueta</th>
+                    <th scope="col">Info</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Temperatura C°</td>
+                    <td><span class="badge badge-primary badge-pill" id="temperatura"></span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Estado</td>
+                    <td><span class="badge badge-primary badge-pill" id="estado"></span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Conexión</td>
+                    <td> <span class="badge badge-primary badge-pill" id="conexion"></span</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Ventilador</td>
+                    <td> <span class="badge badge-primary badge-pill" id="ventilador">prueba</span></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
+    <script src="../js/firebase.js"></script>
+    
+</body>
+
+</html>

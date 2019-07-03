@@ -14,7 +14,8 @@ var firebaseConfig = {
    function writeTemperatura() {
        firebase.database().ref('home/' + "Temperatura").set({
          temperatura: "14",
-         estado: "2"
+         estado: "2",
+         ventilador: "1"
        });
      }
 writeTemperatura();
@@ -31,6 +32,14 @@ writeTemperatura();
         $("#estado").removeClass("badge badge-primary badge-pill");
         $("#estado").addClass("badge badge-danger badge-pill");
         $("#estado").text("Critico");
+      }
+
+      if(result.ventilador == 1){
+        $("#ventilador").text("Apagado");
+      }else{
+        $("#ventilador").removeClass("badge badge-primary badge-pill");
+        $("#ventilador").addClass("badge badge-danger badge-pill");
+        $("#ventilador").text("Encendido");
       }
       if(result != null){
         $("#conexion").text("Activo");
