@@ -10,15 +10,15 @@ var firebaseConfig = {
   };
   firebase.initializeApp(firebaseConfig);
 
-   // Get a reference to the database ser
-   function writeTemperatura() {
-       firebase.database().ref('home/' + "Temperatura").set({
-         temperatura: "14",
-         estado: "2",
-         ventilador: "1"
-       });
-     }
-writeTemperatura();
+//    // Get a reference to the database ser
+//    function writeTemperatura() {
+//        firebase.database().ref('home/' + "Temperatura").set({
+//          temperatura: "14",
+//          estado: "2",
+//          ventilador: "1"
+//        });
+//      }
+// writeTemperatura();
   function readTemperatura(){
     var result = null;
     var temperatura = firebase.database().ref('home/Temperatura');
