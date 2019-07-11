@@ -1,5 +1,8 @@
 # Arduino con firebase con CLiente web
 Este es un ejemplo sencillo del uso de firebase con su base de datos realTimeDataBase, inmerso con arduino y un cliente web. Para este ejemplo usaremos un cliente utilizando el Hosting que nos ofrece  Firebase esto si asi lo desean para mejor comonidad (opcional); escribimos los datos desde arduino a firebase, y son leidos por el cliente, al mismo tiempo lo escrito por el cliente puede ser leido por arduino haciendo así una conexión asigcrona  en tiempo real. para este ejemplo usaremos lo siguiete.
+![Home](https://github.com/Armando687/arduino-firebase/blob/master/img/home.png)
+![Controll-temperatura](https://github.com/Armando687/arduino-firebase/blob/master/img/temperature.png)
+![control-open-close](https://github.com/Armando687/arduino-firebase/blob/master/img/controll-open-cloose.png)
 ## Material
 * modulo wifi 
 * sensor de temperatura (analogico) NOTA: se puede utilizar un sendor Digital pero se tendrian que hacer los cambios pertinentes en el codigo para su correcto funcionamiento. 
