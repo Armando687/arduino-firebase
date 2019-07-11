@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyAtobkS6J9vl1kUKT5RHxUsQ0FFNCj_DHY",
-    authDomain: "proyectoinicio-aa3c3.firebaseapp.com",
-    databaseURL: "https://proyectoinicio-aa3c3.firebaseio.com",
-    projectId: "proyectoinicio-aa3c3",
-    storageBucket: "proyectoinicio-aa3c3.appspot.com",
-    messagingSenderId: "745203185708",
-    appId: "1:745203185708:web:5700a02273e3bdea"
+    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    authDomain: "example-aa3c3.firebaseapp.com",
+    databaseURL: "https://exaple-aa3c3.firebaseio.com",
+    projectId: "example-aa3c3",
+    storageBucket: "example.appspot.com",
+    messagingSenderId: "xxxxxxxxxxxxxxxxx",
+    appId: "1:745203185708:web:xxxxxxxxxxxxxxxxxx"
   };
   firebase.initializeApp(firebaseConfig);
 
@@ -26,9 +26,12 @@ var firebaseConfig = {
       result = data.val();
       console.log(result.temperatura);
       $("#temperatura").text(result.temperatura);
-      if(result.estado == 1){
+      if(result.estado == 0){
         $("#estado").text("Normal");
-      }else{
+      }else if(result.estado == 1){
+        $("#estado").text("Advertencia");
+      }
+      else{
         $("#estado").removeClass("badge badge-primary badge-pill");
         $("#estado").addClass("badge badge-danger badge-pill");
         $("#estado").text("Critico");
